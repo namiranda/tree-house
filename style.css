@@ -1,44 +1,56 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Quicksand', sans-serif;
 }
 
-header{
-    background-image: url(assets/Plants.png);
+body {
+    background-color: #E6EDCE;
+}
+
+header {
+    background-image: url(assets/mobile-bg.svg);
     background-position: bottom;
     background-size: cover;
     color: white;
     height: 50vh;
 }
-header section{
+
+header section {
     padding: 1rem;
 }
-header h1{
+
+header h1 {
     font-family: 'Playfair Display', serif;
     font-size: 6rem;
     line-height: 5rem;
     text-align: center;
     padding-bottom: 1.5rem;
 }
-header h2{
+
+header h2 {
     font-size: 1rem;
     text-align: end;
     padding: 0 2rem;
 }
-header p{
+
+header p {
     padding: 0 2rem;
     text-align: center;
 }
+
 svg {
-    display: block; 
-    position: absolute; 
-    width: 100%; 
-    bottom: 50%; 
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 50%;
 }
-nav > img{
-    width: 30px;
+
+header img {
+    height: 40px;
+    margin: 10px;
 }
-ul{
+
+ul {
     display: none;
 }
