@@ -18,11 +18,15 @@ header {
     background-size: cover;
     color: white;
     height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 header section {
     padding: 0 1rem;
     margin: 0 10vw;
+    padding-bottom: 4rem;
 }
 
 header h1 {
@@ -52,11 +56,11 @@ svg {
 
 header img {
     height: 40px;
-    margin: 10px;
+    margin: 5px;
 }
 
 nav{
-    padding: 0 2rem;
+    padding: 0 1.5rem;
     display: flex;
     justify-content: space-between;
     min-height: 8vh;
@@ -107,23 +111,36 @@ nav{
         font-size: 20px;
     }
     header {
-        background-image: url(assets/Plants.svg);
+        background-image: url(assets/Plants.png);
+    }
+    header section{
+        padding-bottom: 0.5rem;
     }
 }
 
 @media screen and (min-width: 768px) {
-    html {
-        font-size: 24px;
-    }
+  
     header {
         height: 100vh;
     }
-    .burger{
-        display: none;
+    header h1{
+        font-size: 11rem;
+        line-height: 10.5rem;
+    }
+    header section{
+        padding-bottom: 8rem;
     }
     nav{
         justify-content: space-between;
         min-height: 8vh;
+    } 
+    header img {
+        height: 60px;
+        margin: 10px;
+        cursor: pointer;
+    }
+    .burger{
+        display: none;
     }
     .nav-links{
         width: auto;
@@ -139,12 +156,21 @@ nav{
         min-height: 5vh;
         width: auto;
         padding: 15px;
-        font-size: 0.70rem;
+        font-size: 1rem;
     }
-    header img {
-        height: 60px;
-        margin: 10px;
-        cursor: pointer;
+   
+}
+@media screen and (min-width: 1024px){
+    header h1{
+        font-size: 14rem;
+        line-height: 10.5rem;
+    }
+    header section{
+        padding-bottom: 8rem;
+    }
+
+    header p{
+        padding: 2rem 6rem;
     }
 }
 
