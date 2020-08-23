@@ -56,7 +56,6 @@ svg {
 
 header img {
     height: 40px;
-    margin: 5px;
 }
 
 nav{
@@ -105,7 +104,12 @@ nav{
     margin: 4px;
     transition: all 0.3s ease;
 }
-
+/* -------------------------------MEDIA QUERIES----------------------------- */
+@media only screen and (orientation: landscape) {
+    header {
+      height: 100vh;
+    }
+  }
 @media screen and (min-width: 520px) {
     html {
         font-size: 20px;
@@ -113,12 +117,9 @@ nav{
     header {
         background-image: url(assets/Plants.png);
     }
-    header section{
-        padding-bottom: 0.5rem;
-    }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   
     header {
         height: 100vh;
@@ -126,9 +127,6 @@ nav{
     header h1{
         font-size: 11rem;
         line-height: 10.5rem;
-    }
-    header section{
-        padding-bottom: 8rem;
     }
     nav{
         justify-content: space-between;
