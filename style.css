@@ -8,7 +8,6 @@ html{
     overflow-x: hidden;
 }
 body {
-    background-color: #E6EDCE;
     overflow-x: hidden;
 }
 
@@ -103,6 +102,22 @@ nav{
     margin: 4px;
     transition: all 0.3s ease;
 }
+.about{
+    padding: 2.5rem;
+    background-image: url(assets/about.png);
+    background-position: bottom;
+    background-size: contain;
+    display: grid;
+    grid-template-columns: 90% 20%;
+}
+.about h2{
+    padding-bottom: 1rem;
+}
+.about img{
+    width: 200%;
+    position: relative;
+    bottom: 0px;
+}
 /* -------------------------------MEDIA QUERIES----------------------------- */
 @media only screen and (orientation: landscape) {
     header {
@@ -165,6 +180,9 @@ nav{
 
     header p{
         padding: 2rem 6rem;
+    }
+    .about{
+        padding: 4rem;
     }
 }
 
