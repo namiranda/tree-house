@@ -119,15 +119,56 @@ nav {
     grid-template-columns: 90% 20%;
 }
 
-.about h2 {
-    padding-bottom: 1rem;
-}
-
 .about img {
     width: 300%;
     position: relative;
     z-index: 0;
     margin-top: 200%;
+}
+
+section h2 {
+    padding-bottom: 1rem;
+}
+
+.shop {
+    padding: 2.5rem;
+    padding-top: 0;
+}
+
+.shop p {
+    padding-bottom: 1rem;
+}
+
+.shop .container {
+    display: flex;
+    width: 100%;
+    padding: 2rem 0rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.shop .card {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.img-container {
+    width: 90%;
+    height: 230px;
+    border: #E6EDCE 2px solid;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.img-container img {
+    max-width: 100%;
+    max-height: 80%;
 }
 
 
@@ -199,6 +240,18 @@ nav {
         width: 100%;
         margin-top: 0;
     }
+    .shop .container {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .shop .card {
+        display: flex;
+        width: 25%;
+        flex-direction: column;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -217,6 +270,9 @@ nav {
         width: 80%;
         margin-top: 0;
         padding-left: 3rem;
+    }
+    .shop {
+        padding: 4rem 4rem 4rem 6rem;
     }
 }
 
