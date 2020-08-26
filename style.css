@@ -195,6 +195,16 @@ section h2 {
         width: 250%;
         margin-top: 0;
     }
+    .shop .container {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .shop .card {
+        width: 50%;
+    }
 }
 
 @media screen and (min-width: 769px) {
@@ -240,17 +250,9 @@ section h2 {
         width: 100%;
         margin-top: 0;
     }
-    .shop .container {
-        display: flex;
-        width: 100%;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
+   
     .shop .card {
-        display: flex;
         width: 25%;
-        flex-direction: column;
     }
 }
 
@@ -272,7 +274,7 @@ section h2 {
         padding-left: 3rem;
     }
     .shop {
-        padding: 4rem 4rem 4rem 6rem;
+        padding: 1rem 4rem 4rem 6rem;
     }
 }
 
