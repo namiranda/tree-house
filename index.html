@@ -44,9 +44,20 @@
         <img src="assets/about-plant.png" srcset="assets/about-plant-small.png 468w, assets/about-plant-md.png 1169w" sizes="50vw"  alt="">
     </section>
     <section class="shop">
-        <h2>Choose your desired from our awesome collections</h2>
-        <p> Make space in your home for plants. You'll feel better for it. Not only the are beatiful, but caring for them help us </p>
+        <div class="text-container">
+            <h2>Choose your desired from our awesome collections</h2>
+            <p> Make space in your home for plants. You'll feel better for it. Not only the are beatiful, but caring for them help us </p>    
+        </div>
         <div class="container">
+            <div class="sort">
+                <label for="sort-by">Sort by</label>
+                        <select name="sort-by" id="sort-by">
+                            <option value="Relevance">Relevance</option>
+                            <option value="Low">Price: Low to Hight</option>
+                            <option value="Hight">Price: Hight to Low</option>
+                        </select>
+            </div>
+
             <div class="card">
                 <div class="img-container">
                     <img src="assets/calathea.png" srcset="assets/calathea-small.png 409w" sizes="50vw" alt="calathea plant in a pot" loading="lazy">
