@@ -187,8 +187,26 @@ section h2 {
     max-width: 100%;
     max-height: 80%;
 }
-
-
+.info{
+    text-align: center;
+    padding: 2.5rem;
+    background-image: url(assets/potted-plant.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+.info img{
+    width: 20%;
+}
+.info .card{
+    padding-bottom: 2rem;
+}
+.info .card h3{
+    padding-bottom: 0.5rem;
+}
+.info h2+p{
+    padding-bottom: 2rem;
+}
 /* -------------------------------MEDIA QUERIES----------------------------- */
 
 @media only screen and (orientation: landscape) {
@@ -273,6 +291,15 @@ section h2 {
     }
     .shop .text-container{
         width: 60%;
+    }
+    .info-container{
+        display: flex;
+    }
+    .info{
+        background-size: contain;
+    }
+    .info .card{
+        padding: 1rem;
     }
 }
 
