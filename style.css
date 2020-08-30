@@ -215,13 +215,12 @@ section h2 {
     }
 }
 
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 520px){
     html {
         font-size: 20px;
     }
     header {
         background-image: url(assets/Plants.png);
-        height: 70vh;
     }
     .about {
         grid-template-columns: 75% 25%;
