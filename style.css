@@ -221,6 +221,7 @@ section h2 {
     }
     header {
         background-image: url(assets/Plants.png);
+        height: 70vh;
     }
     .about {
         grid-template-columns: 75% 25%;
@@ -239,6 +240,15 @@ section h2 {
     }
     .shop .card {
         width: 50%;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+    .shop .card:nth-of-type(2n){
+        padding-right: 0;
+    }
+    .info{
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
 }
 
@@ -288,6 +298,9 @@ section h2 {
    
     .shop .card {
         width: 33%;
+    }
+    .shop .card:nth-of-type(2n){
+        padding-right: 1rem;
     }
     .shop .text-container{
         width: 60%;
