@@ -292,6 +292,15 @@ section h2 {
     .shop .text-container{
         width: 60%;
     }
+    .info-container{
+        display: flex;
+    }
+    .info{
+        background-size: contain;
+    }
+    .info .card{
+        padding: 1rem;
+    }
 }
 
 @media screen and (min-width: 1024px) {
