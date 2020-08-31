@@ -207,7 +207,21 @@ section h2 {
 .info h2+p{
     padding-bottom: 2rem;
 }
-/* -------------------------------MEDIA QUERIES----------------------------- */
+.gallery{
+    padding: 1rem;
+    text-align: center;
+}
+.gallery-container img{
+    width: 32%;
+    height: 150px;
+    object-fit: cover;
+    
+}
+.gallery-text{
+    padding: 2rem;
+    padding-top: 0;
+}
+/* -----------------------------------------------MEDIA QUERIES------------------------------------------ */
 
 @media only screen and (orientation: landscape) {
     header {
@@ -249,6 +263,10 @@ section h2 {
         padding-left: 3rem;
         padding-right: 3rem;
     }
+    .gallery-container img{
+        height: 200px;
+    }
+   
 }
 
 @media screen and (min-width: 769px) {
@@ -312,6 +330,9 @@ section h2 {
     }
     .info .card{
         padding: 1rem;
+    }
+    .gallery-container img{
+        height: 250px;
     }
 }
 
