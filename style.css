@@ -149,23 +149,27 @@ section h2 {
     border-radius: 1rem;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
-.shop .container .sort{
+
+.shop .container .sort {
     width: 90%;
     padding: 1rem;
     padding-top: 0;
     color: #b8bab3;
 }
-.shop select{
+
+.shop select {
     display: block;
     font-size: 1rem;
     padding: 0.2rem;
     border-radius: 0.5rem;
     border-color: #E6EDCE;
 }
-.shop .price{
+
+.shop .price {
     color: #9fa19c;
     font-size: 1rem;
 }
+
 .shop .card {
     display: flex;
     width: 80%;
@@ -187,40 +191,49 @@ section h2 {
     max-width: 100%;
     max-height: 80%;
 }
-.info{
+
+.info {
     text-align: center;
     padding: 2.5rem;
     background-image: url(assets/potted-plant.png);
     background-size: cover;
     background-position: center;
-    
 }
-.info img{
+
+.info img {
     width: 20%;
 }
-.info .card{
+
+.info .card {
     padding-bottom: 2rem;
 }
-.info .card h3{
+
+.info .card h3 {
     padding-bottom: 0.5rem;
 }
-.info h2+p{
+
+.info h2+p {
     padding-bottom: 2rem;
 }
-.gallery{
+
+.gallery {
     padding: 1rem;
     text-align: center;
 }
-.gallery-container img{
+
+.gallery-container img {
     width: 32%;
+    max-width: 400px;
     height: 150px;
     object-fit: cover;
-    
 }
-.gallery-text{
+
+.gallery-text {
     padding: 2rem;
     padding-top: 0;
 }
+
+
 /* -----------------------------------------------MEDIA QUERIES------------------------------------------ */
 
 @media only screen and (orientation: landscape) {
@@ -229,7 +242,7 @@ section h2 {
     }
 }
 
-@media screen and (min-width: 520px){
+@media screen and (min-width: 520px) {
     html {
         font-size: 20px;
     }
@@ -256,17 +269,16 @@ section h2 {
         padding: 1rem;
         box-sizing: border-box;
     }
-    .shop .card:nth-of-type(2n){
+    .shop .card:nth-of-type(2n) {
         padding-right: 0;
     }
-    .info{
+    .info {
         padding-left: 3rem;
         padding-right: 3rem;
     }
-    .gallery-container img{
+    .gallery-container img {
         height: 200px;
     }
-   
 }
 
 @media screen and (min-width: 769px) {
@@ -312,26 +324,25 @@ section h2 {
         width: 100%;
         margin-top: 0;
     }
-   
     .shop .card {
         width: 33%;
     }
-    .shop .card:nth-of-type(2n){
+    .shop .card:nth-of-type(2n) {
         padding-right: 1rem;
     }
-    .shop .text-container{
+    .shop .text-container {
         width: 60%;
     }
-    .info-container{
+    .info-container {
         display: flex;
     }
-    .info{
+    .info {
         background-size: contain;
     }
-    .info .card{
+    .info .card {
         padding: 1rem;
     }
-    .gallery-container img{
+    .gallery-container img {
         height: 250px;
     }
 }
@@ -358,6 +369,9 @@ section h2 {
     }
     .shop .card {
         width: 25%;
+    }
+    .gallery-container img {
+        height: 300px;
     }
 }
 
