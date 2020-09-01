@@ -57,7 +57,7 @@ header img {
     height: 40px;
 }
 
-nav {
+header nav {
     padding: 0 1rem;
     display: flex;
     justify-content: space-between;
@@ -67,7 +67,7 @@ nav {
     z-index: 1;
 }
 
-.nav-links li {
+nav li {
     list-style: none;
 }
 
@@ -154,7 +154,7 @@ section h2 {
     width: 90%;
     padding: 1rem;
     padding-top: 0;
-    color: #b8bab3;
+    color: #588746;
 }
 
 .shop select {
@@ -166,7 +166,7 @@ section h2 {
 }
 
 .shop .price {
-    color: #9fa19c;
+    color: #4e4e4e;
     font-size: 1rem;
 }
 
@@ -233,6 +233,59 @@ section h2 {
     padding-top: 0;
 }
 
+.subscribe-section form {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe-section input {
+    height: 40px;
+    margin-bottom: 0.5rem;
+    background-color: #eeeeee;
+    border: 1px solid #eeeeee;
+    color: #6b6b6b;
+    border-radius: 0.3rem;
+}
+
+.subscribe-section button {
+    height: 40px;
+    width: 50%;
+    background-color: #588746;
+    border: 2px solid #588746;
+    color: white;
+    border-radius: 0.3rem;
+}
+
+footer {
+    padding: 2.5rem;
+    padding-top: 1rem;
+}
+
+footer nav {
+    display: flex;
+    padding-top: 2rem;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: #4e4e4e;
+    line-height: 2rem;
+    font-weight: bold;
+}
+
+footer nav ul:first-of-type {
+    padding-right: 3rem;
+}
+
+footer img {
+    position: absolute;
+    bottom: 100;
+    right: 0;
+    width: 40%;
+    max-width: 300px;
+}
+
 
 /* -----------------------------------------------MEDIA QUERIES------------------------------------------ */
 
@@ -289,7 +342,7 @@ section h2 {
         font-size: 11rem;
         line-height: 10.5rem;
     }
-    nav {
+    header nav {
         justify-content: space-between;
         min-height: 8vh;
     }
