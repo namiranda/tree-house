@@ -275,15 +275,32 @@ footer nav a {
 }
 
 footer nav ul:first-of-type {
-    padding-right: 3rem;
+    width: 60%;
 }
 
 footer img {
     position: absolute;
     bottom: 100;
     right: 0;
-    width: 40%;
+    width: 35%;
     max-width: 300px;
+}
+
+.contact-info {
+    display: flex;
+}
+
+.contact-info div {
+    padding-top: 8px;
+}
+
+.contact-info div:first-of-type {
+    width: 60%;
+}
+
+.contact-info h5 {
+    font-size: 16px;
+    color: #4e4e4e;
 }
 
 
