@@ -57,7 +57,7 @@ header img {
     height: 40px;
 }
 
-nav {
+header nav {
     padding: 0 1rem;
     display: flex;
     justify-content: space-between;
@@ -67,7 +67,7 @@ nav {
     z-index: 1;
 }
 
-.nav-links li {
+nav li {
     list-style: none;
 }
 
@@ -149,23 +149,27 @@ section h2 {
     border-radius: 1rem;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
-.shop .container .sort{
+
+.shop .container .sort {
     width: 90%;
     padding: 1rem;
     padding-top: 0;
-    color: #b8bab3;
+    color: #588746;
 }
-.shop select{
+
+.shop select {
     display: block;
     font-size: 1rem;
     padding: 0.2rem;
     border-radius: 0.5rem;
     border-color: #E6EDCE;
 }
-.shop .price{
-    color: #9fa19c;
+
+.shop .price {
+    color: #4e4e4e;
     font-size: 1rem;
 }
+
 .shop .card {
     display: flex;
     width: 80%;
@@ -187,40 +191,119 @@ section h2 {
     max-width: 100%;
     max-height: 80%;
 }
-.info{
+
+.info {
     text-align: center;
     padding: 2.5rem;
     background-image: url(assets/potted-plant.png);
     background-size: cover;
     background-position: center;
-    
 }
-.info img{
+
+.info img {
     width: 20%;
 }
-.info .card{
+
+.info .card {
     padding-bottom: 2rem;
 }
-.info .card h3{
+
+.info .card h3 {
     padding-bottom: 0.5rem;
 }
-.info h2+p{
+
+.info h2+p {
     padding-bottom: 2rem;
 }
-.gallery{
+
+.gallery {
     padding: 1rem;
     text-align: center;
 }
-.gallery-container img{
+
+.gallery-container img {
     width: 32%;
+    max-width: 400px;
     height: 150px;
     object-fit: cover;
-    
 }
-.gallery-text{
+
+.gallery-text {
     padding: 2rem;
     padding-top: 0;
 }
+
+.subscribe-section form {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe-section input {
+    height: 40px;
+    margin-bottom: 0.5rem;
+    background-color: #eeeeee;
+    border: 1px solid #eeeeee;
+    color: #6b6b6b;
+    border-radius: 0.3rem;
+}
+
+.subscribe-section button {
+    height: 40px;
+    width: 50%;
+    background-color: #588746;
+    border: 2px solid #588746;
+    color: white;
+    border-radius: 0.3rem;
+}
+
+footer {
+    padding: 2.5rem;
+    padding-top: 1rem;
+}
+
+footer nav {
+    display: flex;
+    padding-top: 2rem;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: #4e4e4e;
+    line-height: 2rem;
+    font-weight: bold;
+}
+
+footer nav ul:first-of-type {
+    width: 60%;
+}
+
+footer img {
+    position: absolute;
+    bottom: 100;
+    right: 0;
+    width: 35%;
+    max-width: 300px;
+}
+
+.contact-info {
+    display: flex;
+}
+
+.contact-info div {
+    padding-top: 8px;
+}
+
+.contact-info div:first-of-type {
+    width: 60%;
+}
+
+.contact-info h5 {
+    font-size: 16px;
+    color: #4e4e4e;
+}
+
+
 /* -----------------------------------------------MEDIA QUERIES------------------------------------------ */
 
 @media only screen and (orientation: landscape) {
@@ -229,7 +312,7 @@ section h2 {
     }
 }
 
-@media screen and (min-width: 520px){
+@media screen and (min-width: 520px) {
     html {
         font-size: 20px;
     }
@@ -256,17 +339,16 @@ section h2 {
         padding: 1rem;
         box-sizing: border-box;
     }
-    .shop .card:nth-of-type(2n){
+    .shop .card:nth-of-type(2n) {
         padding-right: 0;
     }
-    .info{
+    .info {
         padding-left: 3rem;
         padding-right: 3rem;
     }
-    .gallery-container img{
+    .gallery-container img {
         height: 200px;
     }
-   
 }
 
 @media screen and (min-width: 769px) {
@@ -277,7 +359,7 @@ section h2 {
         font-size: 11rem;
         line-height: 10.5rem;
     }
-    nav {
+    header nav {
         justify-content: space-between;
         min-height: 8vh;
     }
@@ -312,27 +394,37 @@ section h2 {
         width: 100%;
         margin-top: 0;
     }
-   
     .shop .card {
         width: 33%;
     }
-    .shop .card:nth-of-type(2n){
+    .shop .card:nth-of-type(2n) {
         padding-right: 1rem;
     }
-    .shop .text-container{
+    .shop .text-container {
         width: 60%;
     }
-    .info-container{
+    .info-container {
         display: flex;
     }
-    .info{
+    .info {
         background-size: contain;
     }
-    .info .card{
+    .info .card {
         padding: 1rem;
     }
-    .gallery-container img{
+    .gallery-container img {
         height: 250px;
+    }
+    .footer-info {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-info nav {
+        width: 50%;
+    }
+    .footer-info .contact-info {
+        padding-top: 2rem;
+        width: 50%;
     }
 }
 
@@ -358,6 +450,19 @@ section h2 {
     }
     .shop .card {
         width: 25%;
+    }
+    .gallery-container img {
+        height: 300px;
+    }
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .subscribe-section {
+        width: 40%;
+    }
+    footer .footer-info {
+        width: 55%;
     }
 }
 
