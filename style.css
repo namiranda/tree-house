@@ -454,6 +454,16 @@ footer img {
     .gallery-container img {
         height: 300px;
     }
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .subscribe-section {
+        width: 40%;
+    }
+    footer .footer-info {
+        width: 55%;
+    }
 }
 
 .nav-active {
